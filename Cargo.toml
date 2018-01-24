@@ -1,0 +1,11 @@
+[package]
+name = "tokenize"
+version = "0.1.0"
+authors = ["Sam Vevang <sam.vevang@gmail.com>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "0.2"
+natural = "0.3.0"
