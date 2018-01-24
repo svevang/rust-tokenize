@@ -1,13 +1,13 @@
 # rust-tokenize
 
-A rust library providing a function to tokenize a string.
+Tokenize a string (in the NLP sense) using a rust library and FFI.
 
 ## Getting Started
 
  Make sure you have [rust
  installed](https://www.rust-lang.org/en-US/install.html).
 
-use the provided Makefile to to build the dylib and link with a demo c program
+Use the provided Makefile to to build the dylib and link with a demo c program.
 
 ```
 $ make
@@ -24,6 +24,8 @@ Next running the example c program you can see the ffi function output
 of the tokenizer:
 
 ```
-$ ./tokenize_linked "Hello this is a test test test of tokens."
+$ ./tokenize_linked "Hello Hello Hello this is a test test test of tokens."
+
 Hello this is a test of tokens
+
 ```
