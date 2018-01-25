@@ -1,10 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void *hello_rust (char*);
+char *hello_rust (char*);
 
 int main(int argc, char **argv)
 {
-   printf("%s", hello_rust(argv[1]));
+   char *resp = hello_rust(argv[1]);
+   printf("%s", resp);
+   free(resp);
+
    return 0;
 }
 
